@@ -12,13 +12,31 @@
   <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-VGcpLBsp.css">
 </head>
 
-<body>
+<!-- <body>
   <form class="form">
     <input type="text" name="search" required />
     <button type="submit">Search</button>
   </form>
   <div class="loader hidden"></div>
   <ul class="gallery"></ul>
+
+  <script type="module" src="./main.js"></script>
+</body> -->
+
+<body>
+  <main>
+    <section class="container">
+      <form class="form">
+        <label class="search-form">
+          <input class="search-input" type="text" name="search" placeholder="Search images..." />
+        </label>
+        <button class="searchbtn" type="submit">Search</button>
+      </form>
+      <ul class="gallery"></ul>
+      <button class="btnMore hidden" type="button">Load more</button>
+      <span class="loader hidden"></span>
+    </section>
+  </main>
 
 </body>
 
