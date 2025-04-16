@@ -30,7 +30,7 @@ export function getAllImages(massege) {
   const baseURL = 'https://pixabay.com/api/';
 
   const params = {
-    key: '49101285-dc6548589a888be5ea0d6fe27',
+    key: '33135653-4734ab6feb6e20c316e4b7aea',
     q: `${massege}`,
     image_type: 'photo',
     orientation: 'horizontal',
@@ -39,3 +39,6 @@ export function getAllImages(massege) {
 
   return axios.get(baseURL, { params }).then(res => res.data.hits);
 }
+
+
+// 49101285-dc6548589a888be5ea0d6fe27
