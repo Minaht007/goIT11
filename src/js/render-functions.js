@@ -1,5 +1,3 @@
-
-
 export function imageTemplate(item) {
     const {
       webformatURL,
