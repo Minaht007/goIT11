@@ -1,6 +1,6 @@
 
 import { getAllImages } from './js/pixabay-api';
-import { imageTemplate, imagesTemplate } from './js/render-functions';
+import {imagesTemplate } from './js/render-functions';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import SimpleLightbox from 'simplelightbox';
@@ -19,9 +19,9 @@ refs.form.addEventListener('submit', searchImages);
 function searchImages(e) {
   e.preventDefault();
   showLoader();
-  const massege = e.target.elements.search.value.trim();
+  const message = e.target.elements.search.value.trim();
   refs.gallery.innerHTML = '';
-  getAllImages(massege)
+  getAllImages(message)
     .then(arr => {
       if (arr.length === 0) {
         iziToast.error({
